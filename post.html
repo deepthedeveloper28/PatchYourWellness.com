@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="post-meta-title">Wellness Articles & Guides | PatchYourWellness.com</title>
+  <meta name="description" id="post-meta-desc" content="In-depth editorial articles covering natural recovery, calm routines, focus flow states, and clean wellness technology on PatchYourWellness.com.">
+  <meta name="keywords" content="wellness articles, wearable wellness guides, sleep quality research, natural calm habits, PatchYourWellness journal">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://patchyourwellness.com/post.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" id="og-meta-title" content="Wellness Articles & Guides | PatchYourWellness.com">
+  <meta property="og:description" id="og-meta-desc" content="In-depth editorial articles covering natural recovery, calm routines, focus flow states, and clean wellness technology.">
+  <meta property="og:url" content="https://patchyourwellness.com/post.html">
+  <meta property="og:site_name" content="PatchYourWellness.com">
+  <meta property="og:image" id="og-meta-img" content="https://patchyourwellness.com/images/blog-hero.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="tw-meta-title" content="Wellness Articles & Guides | PatchYourWellness.com">
+  <meta name="twitter:description" id="tw-meta-desc" content="In-depth editorial articles covering natural recovery, calm routines, focus flow states, and clean wellness technology.">
+  <meta name="twitter:image" id="tw-meta-img" content="https://patchyourwellness.com/images/blog-hero.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Wearable Wellness & Neuro-Tactile Guide",
+    "image": "https://patchyourwellness.com/images/blog-hero.jpg",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PatchYourWellness.com",
+      "logo": "https://patchyourwellness.com/images/logo.png"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Optimized Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <style>
+    /* Reading Progress Bar */
+    #reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background: linear-gradient(90deg, #7042f4, #9333ea, #f59e0b);
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Single Post Layout Styles */
+    .post-hero-section {
+      padding-top: 135px;
+      padding-bottom: 60px;
+      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .post-wide-container {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .post-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .post-breadcrumb a {
+      color: #7042f4;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+
+    .post-breadcrumb a:hover {
+      color: #581c87;
+      text-decoration: underline;
+    }
+
+    .post-header-main {
+      margin-bottom: 36px;
+    }
+
+    .post-header-badges {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .post-title {
+      font-size: 3rem;
+      line-height: 1.15;
+      color: #0f172a;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin: 0 0 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .post-title {
+        font-size: 2.1rem;
+      }
+    }
+
+    .post-lead-excerpt {
+      font-size: 1.25rem;
+      line-height: 1.65;
+      color: #475569;
+      margin-bottom: 28px;
+      max-width: 980px;
+    }
+
+    .post-meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      flex-wrap: wrap;
+    }
+
+    .post-author-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .post-author-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #7042f4, #9333ea);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(112, 66, 244, 0.25);
+    }
+
+    .post-share-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .post-share-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 9999px;
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .post-share-pill:hover {
+      background: #7042f4;
+      border-color: #7042f4;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(112, 66, 244, 0.25);
+    }
+
+    /* Main Editorial 2-Column Grid (Wider Content) */
+    .post-content-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 48px;
+      align-items: start;
+      padding: 50px 0 80px;
+    }
+
+    @media (max-width: 1024px) {
+      .post-content-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    /* Hero Image */
+    .post-hero-visual {
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+      margin-bottom: 40px;
+      position: relative;
+      background: #e2e8f0;
+    }
+
+    .post-hero-visual img {
+      width: 100%;
+      height: auto;
+      max-height: 560px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    /* Editorial Content Typography */
+    .post-article-text {
+      font-size: 1.15rem;
+      line-height: 1.85;
+      color: #334155;
+    }
+
+    .post-article-text p {
+      margin-bottom: 24px;
+    }
+
+    .post-article-text h2 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      line-height: 1.3;
+      color: #0f172a;
+      margin: 44px 0 18px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .post-article-text h2::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 24px;
+      background: linear-gradient(180deg, #7042f4, #9333ea);
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .post-article-text h3 {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      line-height: 1.35;
+      color: #0f172a;
+      margin: 36px 0 16px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .post-article-text h4 {
+      font-size: 1.2rem;
+      color: #0f172a;
+      margin: 28px 0 12px;
+      font-weight: 700;
+    }
+
+    .post-article-text ul,
+    .post-article-text ol {
+      margin: 20px 0 28px;
+      padding-left: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .post-article-text li {
+      line-height: 1.75;
+      color: #334155;
+    }
+
+    .post-article-text a {
+      color: #7042f4;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s ease;
+    }
+
+    .post-article-text a:hover {
+      color: #5b21b6;
+    }
+
+    .post-article-text blockquote {
+      border-left: 4px solid #7042f4;
+      background: #faf5ff;
+      padding: 20px 24px;
+      margin: 30px 0;
+      border-radius: 0 16px 16px 0;
+      font-style: italic;
+      color: #4c1d95;
+    }
+
+    .post-article-text img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin: 24px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .post-article-takeaway {
+      background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+      border-left: 5px solid #7042f4;
+      border-radius: 16px;
+      padding: 26px 30px;
+      margin: 36px 0;
+      color: #3b0764;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      box-shadow: 0 8px 24px rgba(112, 66, 244, 0.08);
+      position: relative;
+    }
+
+    .post-article-takeaway strong {
+      color: #7042f4;
+      display: block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    /* Sticky Sidebar Component */
+    .post-sidebar {
+      position: sticky;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .sidebar-widget {
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    .sidebar-product-card {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      color: #ffffff;
+      border: none;
+    }
+
+    .sidebar-product-card h4 {
+      color: #ffffff;
+      font-size: 1.25rem;
+      margin: 10px 0 6px;
+    }
+
+    .sidebar-product-card p {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .author-full-bio-box {
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 24px;
+      padding: 32px;
+      margin: 60px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+    }
+
+    @media (max-width: 640px) {
+      author-full-bio-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Related Guides Section */
+    .related-posts-section {
+      background: #ffffff;
+      padding: 80px 0;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scroll Reading Progress Indicator -->
+  <div id="reading-progress-bar"></div>
+
+  <!-- Top Announcement & Region Currency Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-message">
+        <span class="top-bar-badge">Editorial Journal</span>
+        <span class="top-bar-desktop-text">Thoughtful Insights & Mindful Daily Habits • </span>
+        <span class="top-bar-guarantee-text">30-Day Money-Back Guarantee</span>
+      </div>
+      <div class="top-bar-controls">
+        <button class="region-currency-toggle" title="Switch between USA (USD) and Canada (CAD)">
+          <span class="region-flag">🇺🇸</span>
+          <span class="region-text">US (USD $)</span>
+          <span style="font-size: 0.7rem; opacity: 0.8;">⇄ Switch</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Site Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-container">
+        <a href="/" class="brand-logo" aria-label="PatchYourWellness Home">
+          <img src="images/logo.png" alt="PatchYourWellness.com" class="brand-logo-img">
+        </a>
+
+        <nav class="nav-menu">
+          <a href="/" class="nav-link">Home</a>
+          <a href="shop.html" class="nav-link">Our Patches</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="blog.html" class="nav-link active">Wellness Journal</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="/#routine-finder" class="btn-quiz-shortcut">✨ Patch Finder</a>
+          <a href="https://ca.superpatch.com/?rsu=zenwellness" target="_blank" rel="noopener noreferrer" class="btn-nav-cta">Shop Now ↗</a>
+          <button class="mobile-toggle" aria-label="Open mobile menu">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="/" class="brand-logo" aria-label="PatchYourWellness Home">
+        <img src="images/logo.png" alt="PatchYourWellness.com" class="brand-logo-img">
+      </a>
+      <button class="mobile-menu-close" style="background:none; font-size:1.8rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="/">Home</a>
+      <a href="shop.html">Our Patches</a>
+      <a href="about.html">About Us</a>
+      <a href="blog.html">Wellness Journal</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="/#routine-finder" class="mobile-patch-finder-link">✨ Patch Finder</a>
+    </div>
+    <a href="https://ca.superpatch.com/?rsu=zenwellness" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%; margin-top:auto;">
+      Visit Official Store ↗
+    </a>
+  </div>
+
+  <!-- Single Post Hero Header -->
+  <section class="post-hero-section">
+    <div class="post-wide-container">
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="blog.html">Wellness Journal</a>
+        <span>›</span>
+        <span id="post-breadcrumb-title" style="color: #0f172a; font-weight: 700;">Article Guide</span>
+      </nav>
+
+      <!-- Post Header Info -->
+      <div class="post-header-main">
+        <div class="post-header-badges">
+          <span class="badge badge-purple" id="post-category-badge">Wellness Guide</span>
+          <span style="font-size: 0.85rem; font-weight: 700; color: #64748b;" id="post-readtime">⏱ 5 min read</span>
+          <span style="font-size: 0.85rem; color: #94a3b8;">•</span>
+          <span style="font-size: 0.85rem; font-weight: 700; color: #059669;">✓ Medically Reviewed</span>
+        </div>
+
+        <h1 class="post-title" id="post-title">Loading Article...</h1>
+
+        <p class="post-lead-excerpt" id="post-excerpt">
+          Exploring transdermal wellness, non-invasive habits, and evidence-informed health routines.
+        </p>
+
+        <div class="post-meta-bar">
+          <div class="post-author-group">
+            <div class="post-author-avatar" id="post-author-initials">PW</div>
+            <div>
+              <div style="font-weight: 800; color: #0f172a; font-size: 1rem;" id="post-author-name">Editorial Team</div>
+              <div style="font-size: 0.85rem; color: #64748b;" id="post-date">September 1, 2026</div>
+            </div>
+          </div>
+
+          <div class="post-share-actions">
+            <button class="post-share-pill" onclick="copyPostLink()">🔗 Copy Link</button>
+            <button class="post-share-pill" onclick="sharePostTwitter()">𝕏 Share</button>
+            <button class="post-share-pill" onclick="sharePostFacebook()">📘 Share</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Wide Editorial Layout with Sticky Companion Sidebar -->
+  <main class="post-wide-container">
+    <div class="post-content-layout">
+      
+      <!-- Primary Article Column (Expanded Width) -->
+      <div>
+        <!-- Hero Image -->
+        <div class="post-hero-visual">
+          <img src="images/blog-hero.jpg" alt="Featured Article Image" id="post-hero-img">
+        </div>
+
+        <!-- Article Content Body -->
+        <article class="post-article-text" id="post-body-content">
+          <!-- Injected via JavaScript -->
+        </article>
+
+        <!-- Author Biography Card -->
+        <div class="author-full-bio-box">
+          <div class="post-author-avatar" style="width: 68px; height: 68px; min-width: 68px; font-size: 1.5rem;">✍️</div>
+          <div>
+            <div style="font-size: 0.75rem; font-weight: 800; color: #7042f4; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;">Verified Health Educator</div>
+            <h4 style="font-size: 1.15rem; color: #0f172a; margin: 0 0 6px;" id="post-bio-author">Editorial Health Board</h4>
+            <p style="font-size: 0.925rem; color: #64748b; margin: 0; line-height: 1.6;">
+              Published by the PatchYourWellness.com editorial team. Our guides are curated to provide actionable, science-backed insights into transdermal plant bioavailability, neuro-tactile somatosensory pathways, and daily natural health rituals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sticky Companion Formulation Sidebar -->
+      <aside class="post-sidebar">
+        
+        <!-- Featured Recommended Patch Widget -->
+        <div class="sidebar-widget sidebar-product-card" id="post-recommended-cta">
+          <span class="badge badge-gold" style="margin-bottom: 8px;">★ Recommended Companion</span>
+          <h4 id="post-rec-name">Zen Patch (Botanical)</h4>
+          <p id="post-rec-tagline">24-Hour Transdermal Botanical Calm • 100% Drug-Free</p>
+          
+          <div style="padding: 16px; background: rgba(255,255,255,0.08); border-radius: 14px; margin-bottom: 20px; font-size: 0.85rem; color: #e2e8f0;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span>✓</span> <strong>100% Drug-Free</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span>✓</span> <strong>30-Day Guarantee</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span>✓</span> <strong>Direct Delivery CA & USA</strong>
+            </div>
+          </div>
+
+          <a href="https://ca.superpatch.com/?rsu=zenwellness" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="post-rec-link" style="width: 100%; text-align: center; justify-content: center;">
+            Shop This Patch ↗
+          </a>
+        </div>
+
+        <!-- Quick Key Benefits Callout -->
+        <div class="sidebar-widget">
+          <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 14px;">Why Wearable Wellness?</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: #475569;">
+            <li style="display: flex; gap: 10px;">
+              <span style="color: #059669; font-weight: 800;">✓</span>
+              <span><strong>No Pills to Swallow:</strong> Gentle transdermal & tactile contact.</span>
+            </li>
+            <li style="display: flex; gap: 10px;">
+              <span style="color: #059669; font-weight: 800;">✓</span>
+              <span><strong>24-Hour Steady Level:</strong> No afternoon crashes or jittery surges.</span>
+            </li>
+            <li style="display: flex; gap: 10px;">
+              <span style="color: #059669; font-weight: 800;">✓</span>
+              <span><strong>Waterproof & Sweatproof:</strong> Safe in showers and workouts.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Routine Finder Banner -->
+        <div class="sidebar-widget" style="background: #faf5ff; border-color: #e9d5ff; text-align: center;">
+          <span style="font-size: 2rem; display: block; margin-bottom: 8px;">✨</span>
+          <h4 style="font-size: 1.1rem; color: #4c1d95; margin-bottom: 6px;">Not sure which patch fits?</h4>
+          <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 16px;">
+            Take our 60-second interactive lifestyle quiz to get personalized recommendations.
+          </p>
+          <a href="/#routine-finder" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">
+            Start Patch Finder →
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Related Articles Grid -->
+  <section class="related-posts-section">
+    <div class="post-wide-container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <span class="badge badge-purple" style="margin-bottom: 8px;">📚 Keep Reading</span>
+          <h2 style="font-size: 2.2rem; color: #0f172a; margin: 0; font-weight: 800;">More from the <span class="editorial-italic">Wellness Journal</span></h2>
+        </div>
+        <a href="blog.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 12px 24px;">
+          View All Guides →
+        </a>
+      </div>
+
+      <div class="journal-grid" id="related-posts-grid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="brand-logo" aria-label="PatchYourWellness Home">
+            <img src="images/logo.png" alt="PatchYourWellness.com" class="brand-logo-img">
+          </a>
+          <p>
+            An independent authorized affiliate platform dedicated to sharing clean, non-invasive wearable wellness innovations across North America.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Patches</h4>
+          <div class="footer-links">
+            <a href="shop.html">Our Patches (All 15)</a>
+            <a href="shop.html?category=calm">Calm & Mood</a>
+            <a href="shop.html?category=energy">Clean Energy</a>
+            <a href="shop.html?category=sleep">Rest & Sleep</a>
+            <a href="shop.html?category=focus">Focus & Clarity</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information</h4>
+          <div class="footer-links">
+            <a href="about.html">About & Brand Story</a>
+            <a href="blog.html">Wellness Journal</a>
+            <a href="contact.html">Contact Customer Care</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="disclosure.html">FTC & Health Disclosure</a>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay in the Loop</h4>
+          <p>Receive mindful routine tips, patch guides, and special promotions directly to your inbox.</p>
+          <form class="newsletter-form" action="https://formsubmit.co/ehabshalayel@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Newsletter Subscriber - Patch Your Wellness">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="email" name="email" placeholder="Enter your email address..." required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="compliance-box">
+        <strong>Important Wellness & Affiliate Disclosure:</strong>
+        Statements on this website have not been evaluated by Health Canada or the FDA. Super Patch products are non-medicated wearable wellness lifestyle items and are not intended to diagnose, treat, cure, or prevent any disease. As an independent affiliate partner, we may earn a referral commission if you make a purchase through links on this site.
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 PatchYourWellness.com • Independent Super Patch Affiliate Partner. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="disclosure.html">Affiliate Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (Deferred for non-blocking render) -->
+  <script src="js/journal.js" defer></script>
+  <script src="js/post.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script>
+    // Live scroll reading progress bar with passive listener
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (height > 0) {
+        const scrolled = (winScroll / height) * 100;
+        const bar = document.getElementById('reading-progress-bar');
+        if (bar) bar.style.width = scrolled + '%';
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
