@@ -61,14 +61,21 @@
   }
   </script>
 
-  <!-- Google Fonts Preconnect & Optimized Loading -->
+  <!-- Google Fonts Preconnect & Non-Blocking Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap">
+  </noscript>
+  </noscript>
 
-  <!-- Preload Critical LCP Assets -->
-  <link rel="preload" as="image" href="images/hero-zen-patch.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="images/logo.png">
+  <!-- Preload Critical LCP Hero Asset -->
+  <link rel="preload" as="image" href="images/hero-zen-patch.webp" type="image/webp" fetchpriority="high">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css">
@@ -106,7 +113,7 @@
     <div class="container">
       <div class="nav-container">
         <a href="/" class="brand-logo" aria-label="PatchYourWellness Home">
-          <img src="images/logo.png" alt="PatchYourWellness.com" class="brand-logo-img">
+          <img src="images/logo.webp" width="180" height="61" decoding="async" alt="PatchYourWellness.com" class="brand-logo-img">
         </a>
 
         <nav class="nav-menu">
@@ -130,7 +137,7 @@
   <div class="mobile-menu">
     <div class="mobile-menu-header">
       <a href="/" class="brand-logo" aria-label="PatchYourWellness Home">
-        <img src="images/logo.png" alt="PatchYourWellness.com" class="brand-logo-img">
+        <img src="images/logo.webp" width="180" height="61" decoding="async" alt="PatchYourWellness.com" class="brand-logo-img">
       </a>
       <button class="mobile-menu-close" style="background:none; font-size:1.8rem; cursor:pointer;">✕</button>
     </div>
@@ -198,16 +205,16 @@
           <div class="hero-social-proof-row">
             <div class="customer-avatars-group">
               <div class="customer-avatar-circle" title="Verified Customer Review">
-                <img src="images/avatars/avatar-1.jpg" alt="Verified Customer">
+                <img src="images/avatars/avatar-1.webp" width="40" height="40" loading="lazy" decoding="async" alt="Verified Customer">
               </div>
               <div class="customer-avatar-circle" title="Verified Customer Review">
-                <img src="images/avatars/avatar-2.jpg" alt="Verified Customer">
+                <img src="images/avatars/avatar-2.webp" width="40" height="40" loading="lazy" decoding="async" alt="Verified Customer">
               </div>
               <div class="customer-avatar-circle" title="Verified Customer Review">
-                <img src="images/avatars/avatar-3.jpg" alt="Verified Customer">
+                <img src="images/avatars/avatar-3.webp" width="40" height="40" loading="lazy" decoding="async" alt="Verified Customer">
               </div>
               <div class="customer-avatar-circle" title="Verified Customer Review">
-                <img src="images/avatars/avatar-4.jpg" alt="Verified Customer">
+                <img src="images/avatars/avatar-4.webp" width="40" height="40" loading="lazy" decoding="async" alt="Verified Customer">
               </div>
             </div>
             <div style="display: flex; flex-direction: column; gap: 2px;">
@@ -224,7 +231,7 @@
               <span class="badge-new-look-title">NEW LOOK</span>
               <span class="badge-new-look-sub">SAME POWERFUL FORMULA</span>
             </div>
-            <img src="images/hero-zen-patch.jpg" alt="Super Patch Zen Mood Botanical Wellness Patch" class="hero-product-img" loading="eager">
+            <img src="images/hero-zen-patch.webp" alt="Super Patch Zen Mood Botanical Wellness Patch" class="hero-product-img" width="800" height="800" fetchpriority="high" decoding="sync">
           </div>
         </div>
 
@@ -393,7 +400,7 @@
             <div class="step-flow-col">
               <div class="step-flow-badge-num">2</div>
               <div class="step-flow-circle-img" style="background: #ffffff;">
-                <img src="images/transdermal-diagram.jpg" alt="Transdermal Bioavailability Matrix Diagram">
+                <img src="images/transdermal-diagram.webp" width="800" height="800" loading="lazy" decoding="async" alt="Transdermal Bioavailability Matrix Diagram">
               </div>
               <div class="step-flow-title">2. ABSORB & SIGNAL</div>
               <p class="step-flow-desc">Bioactive plant extracts & neuro-ridges absorb steadily—100% bypassing stomach acids and digestion.</p>
@@ -403,7 +410,7 @@
             <div class="step-flow-col">
               <div class="step-flow-badge-num">3</div>
               <div class="step-flow-circle-img">
-                <img src="images/lifestyle-woman.jpg" alt="Woman feeling refreshed and revitalized with Super Patch">
+                <img src="images/lifestyle-woman.webp" width="800" height="800" loading="lazy" decoding="async" alt="Woman feeling refreshed and revitalized with Super Patch">
               </div>
               <div class="step-flow-title">3. THRIVE 24/7</div>
               <p class="step-flow-desc">Enjoy steady calm, clean focus, pain relief, or sleep all day long with zero jittery crashes.</p>
@@ -419,7 +426,7 @@
             <div class="star-rating" style="font-size: 0.95rem; margin-bottom: 12px;">★★★★★</div>
             <div class="wellness-quote-author-row">
               <div class="wellness-quote-avatar">
-                <img src="images/avatars/avatar-1.jpg" alt="Jessica M.">
+                <img src="images/avatars/avatar-1.webp" width="40" height="40" loading="lazy" decoding="async" alt="Jessica M.">
               </div>
               <div class="wellness-quote-author">
                 <strong>– Jessica M.</strong>
@@ -482,7 +489,7 @@
       <!-- Panel 1: Energy (Boost Patch) -->
       <div class="what-tab-panel active" id="what-energy">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-energy.jpg?v=3" alt="All-Day Clean Energy with Model Wearing Boost Patch" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-energy.webp" alt="All-Day Clean Energy with Model Wearing Boost Patch" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/boost-patch.webp" alt="Boost Patch">
             <div>
@@ -525,7 +532,7 @@
       <!-- Panel 2: Pain Relief (Freedom Patch) -->
       <div class="what-tab-panel" id="what-pain-relief">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-pain-relief.jpg?v=3" alt="Targeted Physical Comfort & Pain Relief on Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-pain-relief.webp" alt="Targeted Physical Comfort & Pain Relief on Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/freedom-patch.webp" alt="Freedom Patch">
             <div>
@@ -568,7 +575,7 @@
       <!-- Panel 3: Strength (Victory Patch) -->
       <div class="what-tab-panel" id="what-strength">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-strength.jpg?v=3" alt="Athletic Strength and Muscle Power on Fitness Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-strength.webp" alt="Athletic Strength and Muscle Power on Fitness Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/victory-patch.webp" alt="Victory Patch">
             <div>
@@ -611,7 +618,7 @@
       <!-- Panel 4: Rest (REM Patch) -->
       <div class="what-tab-panel" id="what-rest">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-rest.jpg" alt="Deep Restorative Sleep Model with Patch" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-rest.webp" alt="Deep Restorative Sleep Model with Patch" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/rem-patch.webp" alt="REM Patch">
             <div>
@@ -654,7 +661,7 @@
       <!-- Panel 5: Balance (Liberty Patch) -->
       <div class="what-tab-panel" id="what-balance">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-balance.jpg" alt="Neurological Balance and Stability on Yoga Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-balance.webp" alt="Neurological Balance and Stability on Yoga Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/liberty-patch.webp" alt="Liberty Patch">
             <div>
@@ -697,7 +704,7 @@
       <!-- Panel 6: Skin Care (Lumi Patch) -->
       <div class="what-tab-panel" id="what-skin-care">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-skincare.jpg" alt="Skin Care and Natural Radiance on Model with Patch" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-skincare.webp" alt="Skin Care and Natural Radiance on Model with Patch" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/lumi-patch.webp" alt="Lumi Patch">
             <div>
@@ -740,7 +747,7 @@
       <!-- Panel 7: Concentration (Focus Patch) -->
       <div class="what-tab-panel" id="what-concentration">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-focus.jpg" alt="Laser Concentration and Cognitive Stamina on Focused Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-focus.webp" alt="Laser Concentration and Cognitive Stamina on Focused Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/focus-patch.webp" alt="Focus Patch">
             <div>
@@ -783,7 +790,7 @@
       <!-- Panel 8: Positivity (Joy Patch) -->
       <div class="what-tab-panel" id="what-positivity">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-positivity.jpg" alt="Elevated Positivity and Optimism on Smiling Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-positivity.webp" alt="Elevated Positivity and Optimism on Smiling Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/joy-patch.webp" alt="Joy Patch">
             <div>
@@ -826,7 +833,7 @@
       <!-- Panel 9: Nausea Relief (Assure Patch) -->
       <div class="what-tab-panel" id="what-nausea-relief">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-nausea.jpg" alt="Nausea Relief and Travel Comfort on Model with Patch" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-nausea.webp" alt="Nausea Relief and Travel Comfort on Model with Patch" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/assure-patch.webp" alt="Assure Patch">
             <div>
@@ -869,7 +876,7 @@
       <!-- Panel 10: Metabolism (Ignite Patch) -->
       <div class="what-tab-panel" id="what-metabolism">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-metabolism.jpg" alt="Metabolism and Calorie Burning on Active Fitness Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-metabolism.webp" alt="Metabolism and Calorie Burning on Active Fitness Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/ignite-patch.webp" alt="Ignite Patch">
             <div>
@@ -912,7 +919,7 @@
       <!-- Panel 11: Will Power (Kick It Patch) -->
       <div class="what-tab-panel" id="what-will-power">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-willpower.jpg" alt="Will Power and Habit Control on Mindful Model" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-willpower.webp" alt="Will Power and Habit Control on Mindful Model" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/kick-it-patch.webp" alt="Kick It Patch">
             <div>
@@ -955,7 +962,7 @@
       <!-- Panel 12: For Men (Rocket Patch) -->
       <div class="what-tab-panel" id="what-for-men">
         <div class="what-visual-container">
-          <img src="images/lifestyle/lifestyle-formen.jpg?v=4" alt="For Men Performance and Vitality on Athletic Man" class="what-main-img" loading="lazy">
+          <img src="images/lifestyle/lifestyle-formen.webp" alt="For Men Performance and Vitality on Athletic Man" class="what-main-img" loading="lazy">
           <div class="what-floating-patch-badge">
             <img src="images/products/rocket-patch.webp" alt="Rocket Patch">
             <div>
@@ -1647,7 +1654,7 @@
           <!-- Right: Interactive 3D Visual Stage with Hotspots -->
           <div class="science-visual-display">
             <div class="science-visual-stage-inner">
-              <img src="images/transdermal-diagram.jpg" alt="3D Transdermal Epidermis Nutrient Absorption Diagram" loading="lazy">
+              <img src="images/transdermal-diagram.webp" width="800" height="800" loading="lazy" decoding="async" alt="3D Transdermal Epidermis Nutrient Absorption Diagram" loading="lazy">
               <div class="science-hotspot-badge hotspot-top-left">
                 <span class="hotspot-pulse-dot"></span>
                 <span>Active Botanical Matrix</span>
@@ -1698,7 +1705,7 @@
           <!-- Right: Interactive 3D Visual Stage with Hotspots -->
           <div class="science-visual-display">
             <div class="science-visual-stage-inner">
-              <img src="images/neural-diagram.jpg" alt="3D Sensory Neural Mechanoreceptor Pathway Diagram" loading="lazy">
+              <img src="images/neural-diagram.webp" width="800" height="800" loading="lazy" decoding="async" alt="3D Sensory Neural Mechanoreceptor Pathway Diagram" loading="lazy">
               <div class="science-hotspot-badge hotspot-top-left">
                 <span class="hotspot-pulse-dot"></span>
                 <span>Skin Mechanoreceptors</span>
@@ -1940,7 +1947,7 @@
           </p>
           <div class="review-author-row">
             <div class="author-avatar">
-              <img src="images/avatars/avatar-1.jpg" alt="Jessica M.">
+              <img src="images/avatars/avatar-1.webp" width="40" height="40" loading="lazy" decoding="async" alt="Jessica M.">
             </div>
             <div class="author-info">
               <h4>Jessica M.</h4>
@@ -1959,7 +1966,7 @@
           </p>
           <div class="review-author-row">
             <div class="author-avatar">
-              <img src="images/avatars/avatar-2.jpg" alt="David R.">
+              <img src="images/avatars/avatar-2.webp" width="40" height="40" loading="lazy" decoding="async" alt="David R.">
             </div>
             <div class="author-info">
               <h4>David R.</h4>
@@ -1978,7 +1985,7 @@
           </p>
           <div class="review-author-row">
             <div class="author-avatar">
-              <img src="images/avatars/avatar-3.jpg" alt="Sarah T.">
+              <img src="images/avatars/avatar-3.webp" width="40" height="40" loading="lazy" decoding="async" alt="Sarah T.">
             </div>
             <div class="author-info">
               <h4>Sarah T.</h4>
@@ -2084,7 +2091,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="/" class="brand-logo" aria-label="PatchYourWellness Home">
-            <img src="images/logo.png" alt="PatchYourWellness.com" class="brand-logo-img">
+            <img src="images/logo.webp" width="180" height="61" decoding="async" alt="PatchYourWellness.com" class="brand-logo-img">
           </a>
           <p>
             Plant-powered wellness through innovative transdermal patches designed to help you feel your best—naturally.
@@ -2145,7 +2152,6 @@
 
   <!-- Scripts (Deferred for non-blocking render) -->
   <script src="js/app.js" defer></script>
-  <script src="js/shop.js" defer></script>
   <script src="js/quiz.js" defer></script>
 </body>
 </html>
